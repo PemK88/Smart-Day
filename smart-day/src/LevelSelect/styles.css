@@ -1,0 +1,15 @@
+.page-title {
+    position: absolute;
+    width: 291px;
+    height: 30px;
+    left: 69px;
+    top: 50px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 30px;
+
+    color: #638ECE;
+}

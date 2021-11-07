@@ -22,21 +22,23 @@ const LevelSetup = () => {
 
   return (
     <div>
-      <Link to="/dashboard" className="btn btn-primary nav-button-setup">
-        Dash
-      </Link>
-      <Link to="/smart" className="btn btn-primary nav-button-setup">
-        Select
-      </Link>
-      <Link to="/" className="btn btn-primary nav-button-setup">
-        Home
-      </Link>
-      <Link to="/timer" className="btn btn-primary nav-button-setup">
-        Timer
-      </Link>
-      <Link to="/access" className="btn btn-primary nav-button-setup">
-        Access
-      </Link>
+      <div>
+        <Link to="/dashboard" className="btn btn-primary nav-button-select">
+          Dash
+        </Link>
+        <Link to="/" className="btn btn-primary nav-button-select">
+          Home
+        </Link>
+        <Link to="/smart" className="btn btn-primary nav-button-select">
+          Select
+        </Link>
+        <Link to="/timer" className="btn btn-primary nav-button-select">
+          Timer
+        </Link>
+        <Link to="/access" className="btn btn-primary nav-button-select">
+          Access
+        </Link>
+      </div>
       <h1 className="page-title">Level Setup</h1>
       <br />
 

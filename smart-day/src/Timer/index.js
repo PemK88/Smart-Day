@@ -27,19 +27,19 @@ function Timer() {
   return (
     <div className="page">
       <div>
-        <Link to="/dashboard" className="btn btn-primary nav-button-timer">
+        <Link to="/dashboard" className="btn btn-primary nav-button-select">
           Dash
         </Link>
-        <Link to="/smart" className="btn btn-primary nav-button-timer">
-          Select
-        </Link>
-        <Link to="/setup" className="btn btn-primary nav-button-timer">
-          Setup
-        </Link>
-        <Link to="/" className="btn btn-primary nav-button-timer">
+        <Link to="/" className="btn btn-primary nav-button-select">
           Home
         </Link>
-        <Link to="/access" className="btn btn-primary nav-button-timer">
+        <Link to="/smart" className="btn btn-primary nav-button-select">
+          Select
+        </Link>
+        <Link to="/setup" className="btn btn-primary nav-button-select">
+          Setup
+        </Link>
+        <Link to="/access" className="btn btn-primary nav-button-select">
           Access
         </Link>
       </div>

@@ -1,0 +1,13 @@
+.dash-chart {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  top: 50.73px;
+}
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 105px;
+}

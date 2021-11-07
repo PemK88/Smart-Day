@@ -1,0 +1,76 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-container {
+    background-color: #DADADA;
+    height: 84px;
+    border-radius: 12px;
+    width: 343px;
+    margin: 8px 0px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-title{
+    margin-top: 9px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.category-tag-Leisure, .category-tag-Productive, .category-tag-Health {
+    text-align: center;
+    color: white;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 6px;
+    padding: 5px 8px;
+    margin-top: 9px;
+    width: 85px;
+}
+
+.category-tag-Productive {
+    background-color: #27AE60;
+}
+
+.category-tag-Health {
+    background-color: #7012CF;
+}
+
+.category-tag-Leisure {
+    background-color: #FF788B;
+}
+
+.hours {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+    border-radius: 2px;
+}
+
+.page-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 30px;
+    color: #638ECE;
+    text-align: center;
+}

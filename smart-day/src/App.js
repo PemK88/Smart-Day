@@ -5,6 +5,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LevelSelect from "./LevelSelect/index.js";
 import Dashboard from "./Dashboard";
+import LevelSetup from './LevelSetup';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
           <Route exact path="/" render={() => <Login />} />
           <Route exact path="/dashboard" render={() => <Dashboard />} />
           <Route exact path="/smart" render={() => <LevelSelect />} />
-        </Switch>
-      </BrowserRouter>
-    </div>
+          <Route exact path='/setup' render={() => (<LevelSetup />)} />
+        </Switch >
+      </BrowserRouter >
+    </div >
   );
 }
 

@@ -16,7 +16,7 @@
   width: 343px;
   height: 36px;
   left: 43px;
-  top: 151px;
+  top: 60px;
 
   font-family: Poppins;
   font-style: normal;
@@ -35,7 +35,7 @@
   width: 307px;
   height: 54px;
   left: 61px;
-  top: 190px;
+  top: 100px;
 
   font-family: Poppins;
   font-style: normal;
@@ -52,7 +52,7 @@
   width: 343px;
   height: 36px;
   left: 43px;
-  top: 400px;
+  top: 310px;
 
   font-family: Poppins;
   font-style: normal;
@@ -71,7 +71,7 @@
   width: 307px;
   height: 54px;
   left: 61px;
-  top: 440px;
+  top: 350px;
 
   font-family: Poppins;
   font-style: normal;
@@ -88,7 +88,7 @@
   width: 343px;
   height: 36px;
   left: 43px;
-  top: 650px;
+  top: 560px;
 
   font-family: Poppins;
   font-style: normal;
@@ -107,7 +107,7 @@
   width: 307px;
   height: 54px;
   left: 61px;
-  top: 690px;
+  top: 600px;
 
   font-family: Poppins;
   font-style: normal;
@@ -189,4 +189,21 @@
   /* identical to box height */
 
   color: #000000;
+}
+
+.nav-button {
+  position: relative;
+  size: small;
+  top: 450px;
+  width: 40px;
+  font-size: 10px;
+  text-align: center;
+  display: inline;
+  border-left-width: 17px;
+  border-right-width: 17px;
+}
+
+.access-body {
+  position: absolute;
+  top: 50px;
 }

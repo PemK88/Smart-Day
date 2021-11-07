@@ -1,70 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 .page-title {
+  margin: 45px;
 
-    margin: 45px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 30px;
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 30px;
-
-
-    color: #638ECE;
+  color: #638ece;
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #FBFBFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fbfbfb;
 }
 
 .days-list {
-    list-style: none;
-    width: 355px;
-    height: 750px;
-    background-color: white;
-    padding: 0;
-    border: 2px solid #979797;
-    border-radius: 12px;
+  list-style: none;
+  width: 355px;
+  height: 750px;
+  background-color: white;
+  padding: 0;
+  border: 2px solid #979797;
+  border-radius: 12px;
 }
 
-
 .days-list li {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 130%;
-    padding: 34px 20px;
-    line-height: 130%;
-    border-bottom: 1px solid #A9A9A9;
-    display: flex;
-    align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 130%;
+  padding: 34px 20px;
+  line-height: 130%;
+  border-bottom: 1px solid #a9a9a9;
+  display: flex;
+  align-items: center;
 }
 
 #no-bottom-border {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .level-select {
-    margin-left: auto;
-    width: 100px;
+  margin-left: auto;
+  width: 100px;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .dropdown-menu.show {
-    display: block;
-    width: 100%;
-    min-width: 0;
+  display: block;
+  width: 100%;
+  min-width: 0;
 }
 
 .btn-primary {
-    width:100px;
+  width: 100px;
+}
+
+.nav-button-select {
+  position: relative;
+  size: small;
+  top: 0px;
+  width: 40px !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  display: inline !important;
+  border-left-width: 17px !important;
+  border-right-width: 17px !important;
 }

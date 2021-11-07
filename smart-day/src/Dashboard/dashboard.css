@@ -28,3 +28,14 @@
   text-align: center;
   background-color: white;
 }
+
+.nav-button-dash {
+  position: relative;
+  top: 1px;
+  width: 40px;
+  font-size: 10px;
+  text-align: center;
+  display: inline;
+  border-left-width: 17px;
+  border-right-width: 17px;
+}

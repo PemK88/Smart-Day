@@ -1,62 +1,74 @@
 .timer-btn {
-    background: #B7D4FF;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 900;
-    color: #4070EB;
-    border: 1px solid #4070EB;
+  background: #b7d4ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 900;
+  color: #4070eb;
+  border: 1px solid #4070eb;
 }
 
 .square {
-    background-color: #4070EB;
-    width: 20px;
-    height: 20px;
-    width: 15px;
-    height: 15px;
-    margin: auto;
-    border-radius: 2px;
+  background-color: #4070eb;
+  width: 20px;
+  height: 20px;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  border-radius: 2px;
 }
 
 .circle-btns {
-    display: flex;
-    margin-top: 30px;
+  display: flex;
+  margin-top: 30px;
 }
 
 .circle-space {
-    margin-right: 150px;
+  margin-right: 150px;
 }
 
 .triangle {
-    width: 0; 
-    height: 0; 
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-left: 12px solid #4070EB;
-    margin: auto;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid #4070eb;
+  margin: auto;
 }
 
 .select {
-    width: 150px;
+  width: 150px;
 }
 
 .select .btn {
-    width: 150px;
+  width: 150px;
 }
 
 .time {
-    font-size: xxx-large;
-    margin-top: 40px;
-    margin-bottom: 170px;
-    color: #2a557a;
-    text-align: center;
+  font-size: xxx-large;
+  margin-top: 40px;
+  margin-bottom: 170px;
+  color: #2a557a;
+  text-align: center;
 }
 
 .stop-btns {
-    width: 60px;
-    height: 60px;
-    font-weight: 900;
-    color: #4070EB;
-    margin: 0 20px;
+  width: 60px;
+  height: 60px;
+  font-weight: 900;
+  color: #4070eb;
+  margin: 0 20px;
+}
+
+.nav-button-timer {
+  position: relative;
+  size: small;
+  top: 900px;
+  width: 40px !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  display: inline !important;
+  border-left-width: 17px !important;
+  border-right-width: 17px !important;
 }

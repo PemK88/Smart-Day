@@ -1,52 +1,75 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./styles.css";
-import ReactTimerStopwatch from 'react-stopwatch-timer';
+import ReactTimerStopwatch from "react-stopwatch-timer";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { Stopwatch } from "hooked-react-stopwatch";
+import { Link } from "react-router-dom";
 
-function Timer () {
+function Timer() {
+  const [play, setPlay] = useState(false);
 
-    const [play, setPlay] = useState(false);
+  const [time, setTime] = useState(new Date(0, 0, 0, 0, 0, 0, 0));
 
-    const [time, setTime] = useState(new Date(0, 0, 0, 0, 0, 0, 0));
+  const [selected, setSelected] = useState("Work");
 
-    const [selected, setSelected] = useState('Work')
+  const handlePlay = () => {
+    setPlay(!play);
+  };
 
-    
-    const handlePlay = () => {
-        setPlay(!play);
-    };
+  const handleReset = () => {
+    setTime(new Date(0, 0, 0, 0, 0, 0, 0));
+  };
 
-    const handleReset = () => {
-        setTime(new Date(0, 0, 0, 0, 0, 0, 0));
-    };
+  const handleSelect = () => {
+    setSelected(selected === "Work" ? "Physical Activity" : "Work");
+  };
 
-    const handleSelect = () => {
-        setSelected((selected === 'Work' ? 'Physical Activity' : 'Work'));
-    };
+  return (
+    <div className="page">
+      <div>
+        <Link to="/dashboard" className="btn btn-primary nav-button-timer">
+          Dash
+        </Link>
+        <Link to="/smart" className="btn btn-primary nav-button-timer">
+          Select
+        </Link>
+        <Link to="/setup" className="btn btn-primary nav-button-timer">
+          Setup
+        </Link>
+        <Link to="/" className="btn btn-primary nav-button-timer">
+          Home
+        </Link>
+        <Link to="/access" className="btn btn-primary nav-button-timer">
+          Access
+        </Link>
+      </div>
+      <h1 className="page-title">Activity Timer</h1>
+      <br />
+      <br />
+      <br />
 
-    
-    return (
-        <div className="page">
-            <h1 className="page-title">Activity Timer</h1>
-            <br/>
-            <br/>
-            <br/>
-            
+      <DropdownButton id={0} title={selected} className="select">
+        <Dropdown.Item href="#/action-1" onClick={handleSelect}>
+          Work
+        </Dropdown.Item>
+        <Dropdown.Item href="#/action-2" onClick={handleSelect}>
+          Physical Activity
+        </Dropdown.Item>
+      </DropdownButton>
 
-            <DropdownButton id={0} title={selected} className="select">
-                <Dropdown.Item href="#/action-1"  onClick={handleSelect}>Work</Dropdown.Item>
-                <Dropdown.Item href="#/action-2" onClick={handleSelect}>Physical Activity</Dropdown.Item>
-            </DropdownButton>
+      <br />
+      <br />
+      <br />
+      <Stopwatch
+        hideMilliseconds={true}
+        separators={[":", ":", ""]}
+        timeContainerClassName="time"
+        playIconClassName="stop-btns"
+        pauseIconClassName="stop-btns"
+        resetIconClassName="stop-btns"
+      />
 
-            <br/>
-            <br/>
-            <br/>
-            <Stopwatch hideMilliseconds={true} separators={[':',':','']} timeContainerClassName='time'
-                playIconClassName='stop-btns' pauseIconClassName='stop-btns' resetIconClassName='stop-btns'/>
-            
-            
-            {/* <ReactTimerStopwatch isOn={play} className="react-stopwatch-timer__table" watchType="stopwatch"
+      {/* <ReactTimerStopwatch isOn={play} className="react-stopwatch-timer__table" watchType="stopwatch"
                 displayCircle={true} color='#557CB6' hintColor="rgb(197, 196, 196)" fromTime={time}/>
             <br/>
             <div className="circle-btns">
@@ -58,12 +81,8 @@ function Timer () {
                 </button>
                 
             </div> */}
-        </div>
-
-        
-        
-    );
-
+    </div>
+  );
 }
 
 export default Timer;

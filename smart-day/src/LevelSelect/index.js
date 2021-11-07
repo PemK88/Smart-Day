@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./styles.css";
-import { DropdownButton, Dropdown } from "react-bootstrap"
+import { Button, DropdownButton, Dropdown } from "react-bootstrap";
 
 function LevelSelect () {
 
@@ -18,8 +18,8 @@ function LevelSelect () {
         return (
             <DropdownButton id={idx.toString()} title={level[idx]} className="level-select">
                 <Dropdown.Item href="#/action-1"  onClick={() => {handleSelect(idx,'Chill')}}>Chill</Dropdown.Item>
-                <Dropdown.Item href="#/action-2" onClick={() => {handleSelect(idx,'Study')}}>Study</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" onClick={() => {handleSelect(idx,'Socialize')}}>Socialize</Dropdown.Item>
+                <Dropdown.Item href="#/action-2" onClick={() => {handleSelect(idx,'Balance')}}>Balance</Dropdown.Item>
+                <Dropdown.Item href="#/action-3" onClick={() => {handleSelect(idx,'Focus')}}>Focus</Dropdown.Item>
             </DropdownButton>
         );
     };
@@ -58,6 +58,7 @@ function LevelSelect () {
                     {generateDropDown(6)}
                 </li>
             </ul>
+            <Button>Save</Button>
         </div>
         
         

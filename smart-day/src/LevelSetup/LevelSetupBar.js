@@ -20,7 +20,7 @@ const LevelSetupBar = ({ title, image, tag, percentage, numHours }) => {
 
                 </Col>
                 <Col xs={3} className="center hours">
-                    <select name="hours" id="hours">
+                    <select name="hours" id="hours" value={numHours}>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

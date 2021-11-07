@@ -11,7 +11,7 @@ const Access = () => {
       <Header />
       <p className="subheading-1">Allow Screentime Access</p>
       <p className="subtext-1">
-        this allows the app to calculate your screentime
+        this allows the app to calculate your social and entertainment activities
       </p>
       <button className="button-1 white-button-text">Let's Start</button>
       <button className="button-2 black-button-text">Don't Allow</button>

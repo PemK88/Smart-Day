@@ -5,8 +5,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LevelSelect from "./LevelSelect/index.js";
 import Dashboard from "./Dashboard";
-import LevelSetup from './LevelSetup';
-import Timer from './Timer';
+import LevelSetup from "./LevelSetup";
+import Timer from "./Timer";
+import Access from "./Access";
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
         <Switch>
           <Route exact path="/" render={() => <Login />} />
           <Route exact path="/dashboard" render={() => <Dashboard />} />
+          <Route exact path="/access" render={() => <Access />} />
           <Route exact path="/smart" render={() => <LevelSelect />} />
-          <Route exact path='/setup' render={() => (<LevelSetup />)} />
-          <Route exact path='/timer' render={() => (<Timer/>)}/>
-        </Switch >
-      </BrowserRouter >
-    </div >
+          <Route exact path="/setup" render={() => <LevelSetup />} />
+          <Route exact path="/timer" render={() => <Timer />} />
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 

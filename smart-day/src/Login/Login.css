@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-.btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-}
-
-.hello {
-  font-weight: 900 !important;
-}
 
 .header {
   position: absolute;
@@ -67,10 +58,13 @@
 }
 
 .login-button {
+  margin: auto;
   position: absolute;
-  width: 335px;
+  width: 350px !important;
   height: 48px;
   left: 42px;
-  top: 406px;
+  top: 506px;
   background-color: #638ece !important;
+  font-weight: 700 !important;
+  font-size: 1.3rem !important;
 }

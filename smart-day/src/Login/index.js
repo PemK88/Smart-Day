@@ -1,5 +1,7 @@
 import React from "react";
 import "./Login.css";
+import LoginButton from "./LoginButton"
+import Welcome from "../images/welcome.png"
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 
 const Header = () => {
@@ -12,7 +14,7 @@ const Login = () => {
       <Header />
       <p className="slogan">Your day is about to get smarter!</p>
       <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        {/* <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             className="username"
             type="text"
@@ -26,10 +28,12 @@ const Login = () => {
             type="password"
             placeholder="Password"
           />
-        </Form.Group>
-        <Button className="login-button" variant="primary" type="submit">
+        </Form.Group> */}
+        {/* <Button className="login-button" variant="primary" type="submit">
           LOG IN
-        </Button>
+        </Button> */}
+        <img style={{ width: "400px", marginTop: "100px", marginLeft: "15px" }} src={Welcome} />
+        <LoginButton />
       </Form>
     </div>
   );
